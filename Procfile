@@ -1,0 +1,1 @@
+web: bin/hundred_go_buffalo
