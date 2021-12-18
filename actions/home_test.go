@@ -1,6 +1,6 @@
 package actions
 
-import "hundred_go_buffalo/models"
+import "hundred-go-buffalo/models"
 
 func (as *ActionSuite) Test_HomeHandler() {
 	res := as.HTML("/").Get()

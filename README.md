@@ -1,4 +1,4 @@
-# hundred_go_buffalo
+# hundred-go-buffalo
 
 ## Background
 
@@ -37,18 +37,18 @@ go get -u -v -tags sqlite github.com/gobuffalo/cli/cmd/buffalo@latest
 ## Initial Generation Using buffalo new
 
 ```PowerShell
-buffalo new hundred_go_buffalo
+buffalo new hundred-go-buffalo
 ```
 
 ## CD and Open in Code for Editing
 
 ```PowerShell
-cd hundred_go_buffalo
+cd hundred-go-buffalo
 code .
 ```
 
 - Add .gitignore. Ignore node_modules and files with secrets.
-- Edit first line of go.mod to use github.com/username, e.g.: `module github.com/denisecase/hundred_go_buffalo`
+- Edit first line of go.mod to use github.com/username, e.g.: `module github.com/denisecase/hundred-go-buffalo`
 - Add Procfile. 
 
 ## GitHub: Create Your Repo in the Cloud
@@ -69,7 +69,12 @@ Get all in one DATABASE_URL. On the Heroku app dashboard, go to Settings / Confi
 
 Get DB vars. On the Heroku app dashboard, go to Resources / Heroku Postgres  / Settings / Database Credentials / View Credentials. Add these to your database.yml.
 
-Configure autodeployment. On the Heroku app dashboard, go to Deploy / Set Deployment Method to GitHub / Set Connect to GitHub to username / repo (e.g., denisecase/)
+Configure autodeployment. On the Heroku app dashboard, go to Deploy / Set Deployment Method to GitHub / Set Connect to GitHub to username / repo (e.g., denisecase/) / Enable Automatic Deploys.
+
+Monitor deployment. After deploying / on the app dashboard, go to Overview / click View Build Progress. 
+
+- If successful, click "View App".
+- If unsuccessful, click "More" / "View Logs".
 
 ## Database Setup
 
@@ -108,7 +113,7 @@ Open Powershell as Adminstrator in your repo folder on your local machine.
 
 ```PowerShell
 git init
-git remote add origin https://github.com/denisecase/hundred_go_buffalo.git
+git remote add origin https://github.com/denisecase/hundred-go-buffalo.git
 git branch -M main
 git add .
 git commit -m "initial commit"
@@ -131,10 +136,25 @@ If you point your browser to [http://127.0.0.1:3000](http://127.0.0.1:3000) you 
 buffalo g resource thing name body:text
 ```
 
-## Routes
+## View Routes
 
 ```PowerShell
 buffalo task routes
+```
+
+## Heroku CLI
+
+```PowerShell
+heroku config -a hundred-go-buffalo
+heroku open -a hundred-go-buffalo
+heroku logs --tail -a hundred-go-buffalo
+```
+
+## Go Best Practices
+
+```PowerShell
+go mod tidy
+go mod vendor
 ```
 
 ## What Next?

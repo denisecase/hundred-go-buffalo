@@ -1,7 +1,7 @@
 package actions
 
 import (
-	"hundred_go_buffalo/models"
+	"hundred-go-buffalo/models"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"

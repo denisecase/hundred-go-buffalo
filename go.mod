@@ -1,4 +1,4 @@
-module github.com/denisecase/hundred_go_buffalo
+module github.com/denisecase/hundred-go-buffalo
 
 go 1.17
 

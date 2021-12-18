@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"hundred_go_buffalo/actions"
+	"hundred-go-buffalo/actions"
 )
 
 // main is the starting point for your Buffalo application.
@@ -13,6 +13,11 @@ import (
 // call `app.Serve()`, unless you don't want to start your
 // application that is. :)
 func main() {
+	port := os.Getenv("PORT")
+	if port == "" {
+		log.Fatal("$PORT must be set")
+	}
+	
 	app := actions.App()
 	if err := app.Serve(); err != nil {
 		log.Fatal(err)

@@ -1,7 +1,7 @@
 package actions
 
 import (
-	"hundred_go_buffalo/models"
+	"hundred-go-buffalo/models"
 )
 
 func (as *ActionSuite) Test_Users_New() {

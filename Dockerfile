@@ -5,7 +5,7 @@ FROM gobuffalo/buffalo:v0.16.27 as builder
 ENV GO111MODULE on
 ENV GOPROXY http://proxy.golang.org
 
-RUN mkdir -p /src/hundred_go_buffalo
+RUN mkdir -p /src/hundred-go-buffalo
 WORKDIR /src/hundred_go_buffalo
 
 # this will cache the npm install step, unless package.json changes

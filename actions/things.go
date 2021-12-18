@@ -2,7 +2,7 @@ package actions
 
 import (
 	"fmt"
-	"hundred_go_buffalo/models"
+	"hundred-go-buffalo/models"
 	"net/http"
 
 	"github.com/gobuffalo/buffalo"

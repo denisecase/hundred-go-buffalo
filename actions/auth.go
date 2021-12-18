@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"hundred_go_buffalo/models"
+	"hundred-go-buffalo/models"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"

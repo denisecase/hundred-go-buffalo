@@ -1,1 +1,1 @@
-web: bin/hundred_go_buffalo
+web: bin/hundred-go-buffalo
