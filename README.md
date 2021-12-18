@@ -48,9 +48,8 @@ code .
 ```
 
 - Add .gitignore. Ignore node_modules and files with secrets.
-- Edit first line of go.mod to use github.com/username. E.g.:
-
-`module github.com/denisecase/hundred_go_buffalo`
+- Edit first line of go.mod to use github.com/username, e.g.: `module github.com/denisecase/hundred_go_buffalo`
+- Add Procfile. 
 
 ## GitHub: Create Your Repo in the Cloud
 
